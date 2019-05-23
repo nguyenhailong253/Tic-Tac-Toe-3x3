@@ -47,6 +47,7 @@ class Board(object):
 
     def is_column_filled(self):
         ''' Check if any of the 3 columns is filled with 1 symbol '''
+
         for column in range(NUM_COLUMNS):
             if self.board[0][column] == self.board[1][column] == self.board[2][column] != DOT:
                 return True
