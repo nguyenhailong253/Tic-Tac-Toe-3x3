@@ -1,5 +1,8 @@
 # author: long nguyen (nguyenhailong253@gmail.com)
 
+from src.board import Board
+from src.messages import Messages
+
 PLAYER_1 = 1
 PLAYER_2 = 2
 PLAYER_1_SYMBOL = 'X'

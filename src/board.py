@@ -1,5 +1,6 @@
 # author: long nguyen (nguyenhailong253@gmail.com)
 
+# +  -  -  - CONSTANTS -  -  - +
 NUM_ROWS = 3
 NUM_COLUMNS = 3
 DOT = "."
@@ -69,8 +70,3 @@ class Board(object):
     def is_board_filled(self):
         ''' Check if the whole board is filled '''
         return self.coordinates_filled == NUM_COLUMNS * NUM_ROWS
-        # for x in range(NUM_ROWS):
-        #     for y in range(NUM_COLUMNS):
-        #         if self.board[x][y] == DOT:
-        #             return False
-        # return True

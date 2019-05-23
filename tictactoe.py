@@ -1,6 +1,6 @@
 # author: long nguyen (nguyenhailong253@gmail.com)
 
-from src.board import Board
+from src.game import Game
 
 
 def main():
