@@ -106,7 +106,22 @@ class Game(object):
             self.current_player = PLAYER_1
             self.current_symbol = PLAYER_1_SYMBOL
 
-    def run_game(self):
+    def check_board_condition(self):
+        ''' Check if board or row/column/diagonal is filled '''
+
+        # if player manages to fill 1 row/column/diagonal, then win
+        if self.board.is_column_filled() \
+                or self.board.is_row_filled() \
+                or self.board.is_diagonal_filled():
+            self.display_win_message()
+            self.game_over = True
+
+        # if no one wins and board is filled, then draw
+        if self.board.is_board_filled():
+            self.game_over = True
+            self.display_draw_message()
+
+    def run(self):
         ''' Main function running the game '''
 
         # welcome players
@@ -137,25 +152,12 @@ class Game(object):
                     self.display_coords_existed_message()
                     continue
 
-                # if player manages to fill 1 row/column/diagonal, then win
-                if self.board.is_column_filled() \
-                        or self.board.is_row_filled() \
-                        or self.board.is_diagonal_filled():
-                    self.display_win_message()
-                    self.game_over = True
-
-                # if no one wins and board is filled, then draw
-                if self.board.is_board_filled():
-                    self.game_over = True
-                    self.display_draw_message()
+                self.check_board_condition()
 
                 # re-draw board
                 self.board.draw_board()
 
                 # switch player
                 self.switch_player()
-
-            else:
-                continue
 
         self.display_game_over_message()
