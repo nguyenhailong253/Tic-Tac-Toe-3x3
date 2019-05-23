@@ -149,6 +149,7 @@ class Game(object):
                     self.game_over = True
                     self.display_draw_message()
 
+                # re-draw board
                 self.board.draw_board()
 
                 # switch player
