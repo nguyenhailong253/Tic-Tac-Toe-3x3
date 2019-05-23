@@ -12,11 +12,12 @@ class TestGame(unittest.TestCase):
 
         game = Game()
         self.assertTrue(game.is_input_numerical(1, 5))
+        self.assertTrue(game.is_input_numerical(1, int("5")))
         self.assertFalse(game.is_input_numerical(1, "5"))
         self.assertFalse(game.is_input_numerical(1, "Hello"))
         self.assertFalse(game.is_input_numerical("", ""))
 
-    def test_out_of_range_input(self):
+    def test_input_within_range(self):
         ''' Test if input is within 1 to 3 '''
 
         game = Game()

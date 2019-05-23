@@ -4,7 +4,8 @@ from src.game import Game
 
 
 def main():
-    pass
+    game = Game()
+    game.run_game()
 
 
 if __name__ == "__main__":

@@ -23,11 +23,12 @@ class Board(object):
     def draw_board(self):
         ''' Draw 3x3 board  '''
 
-        print("\n")
+        # print("\n")
         for x in range(NUM_ROWS):
             for y in range(NUM_COLUMNS):
                 print(self.board[x][y], end=' ')
             print("\n")
+        # print("\n")
 
     def insert_move(self, x, y, player_symbol):
         ''' Insert player symbol to corresponding coordinates '''
@@ -36,7 +37,7 @@ class Board(object):
         if not self.is_board_filled():
             self.coordinates_filled += 1
 
-    # +  -  -  - CONDITIONS FOR WIN/DRAW -  -  - +
+    # +  -  -  - CONDITIONS CHECKING -  -  - +
 
     def is_row_filled(self):
         ''' Check if any of the 3 rows is filled with 1 symbol '''
@@ -58,11 +59,11 @@ class Board(object):
         ''' Check if any of the 2 diagonals is filled with 1 symbol '''
 
         # left to rigght diagonal
-        if self.board[0][0] == self.board[1][1] == self.board[2][2]:
+        if self.board[0][0] == self.board[1][1] == self.board[2][2] != DOT:
             return True
 
         # right to left diagonal
-        if self.board[0][2] == self.board[1][1] == self.board[2][0]:
+        if self.board[0][2] == self.board[1][1] == self.board[2][0] != DOT:
             return True
 
         return False
@@ -70,3 +71,7 @@ class Board(object):
     def is_board_filled(self):
         ''' Check if the whole board is filled '''
         return self.coordinates_filled == NUM_COLUMNS * NUM_ROWS
+
+    def have_coords_existed(self, x, y):
+        ''' Check if input coords already taken on the board '''
+        return self.board[x][y] != DOT
