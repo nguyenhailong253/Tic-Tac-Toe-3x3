@@ -1,6 +1,6 @@
 # author: long nguyen (nguyenhailong253@gmail.com)
 
-# +  -  -  - CONSTANTS -  -  - +
+# Constants
 NUM_ROWS = 3
 NUM_COLUMNS = 3
 DOT = "."

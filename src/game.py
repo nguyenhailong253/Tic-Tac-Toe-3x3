@@ -1,7 +1,7 @@
 # author: long nguyen (nguyenhailong253@gmail.com)
 
 from src.board import Board
-from src.messages import Messages
+from src.messages import MESSAGES
 
 PLAYER_1 = 1
 PLAYER_2 = 2
@@ -13,14 +13,19 @@ class Game(object):
     ''' Game engine for TicTacToe '''
 
     def __init__(self):
+        # first player is always X
         self.current_player = PLAYER_1
         self.current_symbol = PLAYER_1_SYMBOL
+
+        self.board = Board()
 
         # user input x,y coordinates
         self.input_coordinates = []
 
         # game over flag
         self.game_over = False
+
+    # +  -  -  - INPUT VALIDATION -  -  - +
 
     def is_input_numerical(self, x_input, y_input):
         ''' Check if x,y are numerical '''
@@ -47,23 +52,30 @@ class Game(object):
 
             if self.is_input_numerical(x_input, y_input):
                 if self.is_input_within_range(x_input, y_input):
+                    # display valid input message
+                    print(MESSAGES['valid_input'])
                     return True
                 else:
                     # display out of range message
-                    pass
+                    print(MESSAGES['out_of_range'])
             else:
-                # display not numerical message
-                pass
+                # display non-numerical message
+                print(MESSAGES['wrong_type'])
         else:
             # display too many/few inputs
-            pass
+            print(MESSAGES['wrong_num_inputs'])
+
         return False
 
+    # +  -  -  - MESSAGES DISPLAY -  -  - +
+
     def display_win_message(self):
-        pass
+        print("Player {} {}".format(self.current_player, MESSAGES['win']))
 
     def display_draw_message(self):
-        pass
+        print(MESSAGES['draw'])
+
+    # +  -  -  - GAME -  -  - +
 
     def run_game(self):
         pass

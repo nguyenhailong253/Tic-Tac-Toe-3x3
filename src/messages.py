@@ -1,20 +1,10 @@
 # author: long nguyen (nguyenhailong253@gmail.com)
 
-
-class Messages(object):
-    ''' All messages needed for TicTacToe '''
-
-    def __init__(self):
-        pass
-
-    def win_message(self):
-        pass
-
-    def draw_message(self):
-        pass
-
-    def coordinates_out_of_range(self):
-        pass
-
-    def wrong_type_input(self):
-        pass
+MESSAGES = {
+    "win": "wins!",
+    "draw": "Draw match!",
+    "valid_input": "Move Accepted",
+    "wrong_type": "Inputs are not numerical. Please try again",
+    "out_of_range": "Inputs are out of range (1,3). Please try again",
+    "wrong_num_inputs": "Too many/few inputs. Please try again",
+}
