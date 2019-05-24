@@ -22,12 +22,10 @@ class Board(object):
     def draw_board(self):
         ''' Draw 3x3 board  '''
 
-        # print("\n")
         for x in range(NUM_ROWS):
             for y in range(NUM_COLUMNS):
                 print(self.board[x][y], end=' ')
             print("\n")
-        # print("\n")
 
     def insert_move(self, x, y, player_symbol):
         ''' Insert player symbol to corresponding coordinates '''

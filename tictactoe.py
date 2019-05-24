@@ -12,7 +12,4 @@ if __name__ == "__main__":
     main()
 
 # TODO:
-# - add instructions for user input
-# - test more edge cases
-# - add "Play again?"
 # - finish readme
