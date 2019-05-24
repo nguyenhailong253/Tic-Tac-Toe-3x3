@@ -33,11 +33,7 @@ class Game(object):
 
     def is_input_numerical(self, x_input, y_input):
         ''' Check if x,y are numerical '''
-        try:
-            if isinstance(int(x_input), int) and isinstance(int(y_input), int):
-                return True
-        except:
-            return False
+        return x_input.isnumeric() and y_input.isnumeric()
 
     def is_input_within_range(self, x_input, y_input):
         ''' Check if x,y are within range 1 to 3 '''

@@ -11,10 +11,9 @@ class TestGame(unittest.TestCase):
         ''' Test if input is numerical '''
 
         game = Game()
-        self.assertTrue(game.is_input_numerical(1, 5))
-        self.assertTrue(game.is_input_numerical(1, int("5")))
-        self.assertFalse(game.is_input_numerical(1, "5"))
-        self.assertFalse(game.is_input_numerical(1, "Hello"))
+        self.assertTrue(game.is_input_numerical("1", "5"))
+        self.assertFalse(game.is_input_numerical("hello", "5"))
+        self.assertFalse(game.is_input_numerical("world", "Hello"))
         self.assertFalse(game.is_input_numerical("", ""))
 
     def test_input_within_range(self):
