@@ -2,7 +2,7 @@
 A console based version of Tic Tac Toe that allows two human players to play the game on a 3 x 3 board
 
 ## Requirements
-- Python 3.6.x
+- [Python 3.7.x](https://www.python.org/downloads/)
 
 ## Running the game
 
