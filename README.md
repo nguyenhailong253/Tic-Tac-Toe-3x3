@@ -120,6 +120,6 @@ Test game component
     python -m unittest tests.test_game
 
 ## Assumptions
-- Players can read and understand English
-- Players know how co-ordinates work (that is 1,3 will correspond to row or x = 1 and column or y = 3); the row numbers start from left to right and the column numbers start from top to bottom
+- Players can read and understand English and numbers
+- Players know how co-ordinates work (that is 1,3 will correspond to row or x = 1 and column or y = 3)
 - If player 1 is the winner then player 2 will be the loser, and vice versa
