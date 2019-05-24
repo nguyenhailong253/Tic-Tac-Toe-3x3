@@ -7,7 +7,7 @@ This is a console based version of Tic Tac Toe that allows two human players to 
 ## Running the game
 
     git clone https://github.com/nguyenhailong253/Tic-Tac-Toe-3x3.git
-    python tictactoe.py
+    python main.py
 
 ## Rules
 
