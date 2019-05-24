@@ -175,7 +175,7 @@ class Game(object):
                 break
 
             # ask players to type 'y' if they want to play again
-            play_again = input(self.msg.get_play_again_message())
+            play_again = input(self.msg.get_play_again_message()).strip()
 
             if play_again.lower() != 'y':
                 break

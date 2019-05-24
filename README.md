@@ -1,7 +1,7 @@
-# Tic-Tac-Toe-3x3
-A console based version of Tic Tac Toe that allows two human players to play the game on a 3 x 3 board
+# Tic Tac Toe game with 3x3 board
+This is a console based version of Tic Tac Toe that allows two human players to play the game on a 3 x 3 board
 
-## Requirements
+## Requirement(s)
 - [Python 3.7.x](https://www.python.org/downloads/)
 
 ## Running the game
