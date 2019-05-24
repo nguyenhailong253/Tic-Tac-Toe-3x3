@@ -23,6 +23,12 @@ A console based version of Tic Tac Toe that allows two human players to play the
 - If player wants to quit the game, type 'q', anything else will be invalid
 - At the end of each game, players will be asked whether they want to continue with a new round, type 'y' to do so or anything else to exit
 
+### Co-ordinates plane
+- The board is 2D with horizontal x-axis and vertical y-axis
+- x values increase from left to right, y values increase from top to bottom
+- The starting point of the board is on top left with co-ordinates of (1,1), meaning x = y = 1
+- The maximum point is (3,3)
+
 ## Demo
 
     Welcome to Tic Tac Toe !
@@ -114,3 +120,6 @@ Test game component
     python -m unittest tests.test_game
 
 ## Assumptions
+- Players can read and understand English
+- Players know how co-ordinates work (that is 1,3 will correspond to row or x = 1 and column or y = 3); the row numbers start from left to right and the column numbers start from top to bottom
+- If player 1 is the winner then player 2 will be the loser, and vice versa
