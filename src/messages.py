@@ -12,7 +12,7 @@ MSG = {
     "wrong_num_inputs": "Too many/few inputs. Please try again\n",
     "coords_existed": "Oh no, a piece is already at this place! Please try again\n",
     "game_over": "Game Over!\n",
-    "instructions": "Player 1 will go first and play 'X'. Please type in the coordinates of x and y separated by a comma (i.e 1,3 or 2, 2). Otherwise, the inputs will be invalid\n",
+    "instructions": "Player 1 will go first and play 'X'. Please type in the coordinates of x and y separated by a comma (i.e 1,3 or 2, 2). \nOtherwise, the inputs will be invalid\n",
     "play_again": "Do you want to play again? Type 'y' to do so, or anything else to exit: ",
     "thank_player": "\nThank you for playing TicTacToe. Hope you had a great time!\n"
 }
