@@ -27,7 +27,7 @@ A console based version of Tic Tac Toe that allows two human players to play the
 
     Welcome to Tic Tac Toe !
 
-    Player 1 will go first and play 'X'. Please type in the coordinates of x and y separated by a comma (i.e 1,3 or 2, 2). 
+    Player 1 will go first and play 'X'. Please type coordinates of x and y separated by a comma (i.e 1,3 or 2, 2). 
     Otherwise, the inputs will be invalid
 
     . . .
