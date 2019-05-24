@@ -31,9 +31,11 @@ This is a console based version of Tic Tac Toe that allows two human players to 
 
 ## Demo
 
+        
     Welcome to Tic Tac Toe !
 
-    Player 1 will go first and play 'X'. Please type coordinates of x and y separated by a comma (i.e 1,3 or 2, 2). 
+    Player 1 will go first and play 'X'. Please type coordinates of x and y separated by a
+    comma (i.e 1,3 or 2, 2).
     Otherwise, the inputs will be invalid
 
     . . .
@@ -42,71 +44,71 @@ This is a console based version of Tic Tac Toe that allows two human players to 
 
     . . .
 
-    Players 1 enters a coord x,y to place your X or enter 'q' to give up: 1,1
+    Players 1 enters a coord x,y to place your X or enter 'q' to give up: hello, world
+    Inputs are not numerical. Please try again
 
-    Move Accepted
+    Players 1 enters a coord x,y to place your X or enter 'q' to give up: 100,10000
+    Inputs are out of range (1,3). Please try again
 
-    X . .
-
-    . . .
-
-    . . .
-
-    Players 2 enters a coord x,y to place your O or enter 'q' to give up: 3,3
-
-    Move Accepted
-
-    X . .
-
-    . . .
-
-    . . O
-
-    Players 1 enters a coord x,y to place your X or enter 'q' to give up: 2,2
-
-    Move Accepted
-
-    X . .
-
-    . X .
-
-    . . O
-
-    Players 2 enters a coord x,y to place your O or enter 'q' to give up: 3,2
-
-    Move Accepted
-
-    X . .
-
-    . X .
-
-    . O O
+    Players 1 enters a coord x,y to place your X or enter 'q' to give up: 1
+    Too many/few inputs. Please try again
 
     Players 1 enters a coord x,y to place your X or enter 'q' to give up: 1,3
 
     Move Accepted
 
-    X . X
+    . . X
 
-    . X .
+    . . .
 
-    . O O
+    . . .
 
-    Players 2 enters a coord x,y to place your O or enter 'q' to give up: 3,1
+    Players 2 enters a coord x,y to place your O or enter 'q' to give up: 1,1
 
     Move Accepted
 
-    Congratulations ! Player 2 has won the game!
+    O . X
 
-    X . X
+    . . .
+
+    . . .
+
+    Players 1 enters a coord x,y to place your X or enter 'q' to give up: 2,2
+
+    Move Accepted
+
+    O . X
 
     . X .
 
-    O O O
+    . . .
+
+    Players 2 enters a coord x,y to place your O or enter 'q' to give up: 2,3
+
+    Move Accepted
+
+    O . X
+
+    . X O
+
+    . . .
+
+    Players 1 enters a coord x,y to place your X or enter 'q' to give up: 3,1
+
+    Move Accepted
+
+    Congratulations ! Player 1 has won the game!
+
+    O . X
+
+    . X O
+
+    X . .
 
     Game Over!
 
     Do you want to play again? Type 'y' to do so, or anything else to exit: n
+
     Thank you for playing TicTacToe. Hope you had a great time!
 
 
