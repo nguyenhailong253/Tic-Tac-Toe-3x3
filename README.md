@@ -123,4 +123,4 @@ Test game component
 - Players can read and understand English and numbers
 - Players know how co-ordinates work (that is 1,3 will correspond to row or x = 1 and column or y = 3)
 - If player 1 is the winner then player 2 will be the loser, and vice versa
-- Players can use git bash to run the game
+- Players can use git bash or CLI to run the game
